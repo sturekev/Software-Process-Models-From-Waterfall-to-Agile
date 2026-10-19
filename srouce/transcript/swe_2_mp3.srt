@@ -1,0 +1,976 @@
+1
+00:00:00,000 --> 00:00:04,080
+Hello everyone, my name is Truong Phat Tu. Today I'm talking about the
+
+2
+00:00:04,080 --> 00:00:09,360
+Software Process Module from Waterfall to Azure and how Netflix and Riot Games
+
+3
+00:00:09,360 --> 00:00:15,240
+choose their process. I'm a master student in Computer Science of Concordia
+
+4
+00:00:15,240 --> 00:00:21,600
+University in Chicago. So for the general, we will have 11 parts and we will go
+
+5
+00:00:21,600 --> 00:00:29,760
+through from part 1 to 11 in the end. So let's go to part 1. We want to talk
+
+6
+00:00:29,760 --> 00:00:34,800
+about what is Software Process. So in the definition, a Software Process is a
+
+7
+00:00:34,800 --> 00:00:41,220
+structured set of activities required to develop a software system together with
+
+8
+00:00:41,220 --> 00:00:51,420
+the order in which they happen. So why we have to organize a process but
+
+9
+00:00:51,420 --> 00:00:58,800
+not like only programming. So we have three things to control. First is a
+
+10
+00:00:58,800 --> 00:01:04,200
+product, the outcome of the process, activities. Second is a role, the
+
+11
+00:01:04,200 --> 00:01:11,760
+responsibility of people involved in the process, pre and post condition. The
+
+12
+00:01:11,760 --> 00:01:18,960
+statements that are true before and after an activity is carried out or a product
+
+13
+00:01:18,960 --> 00:01:26,280
+is produced. We're gonna go to the four fundamental process, activities. The
+
+14
+00:01:26,280 --> 00:01:38,640
+first one is specification, design and implement, validation and evolution. So for
+
+15
+00:01:38,640 --> 00:01:50,640
+design, it turns the specification into a working system like architecture, component
+
+16
+00:01:50,640 --> 00:01:56,640
+interface, data structure, and algorithm, coding, debugging, and integration.
+
+17
+00:01:56,640 --> 00:02:08,640
+For validation is so the system conforms to its specification. One of the mistakes happening in specification is
+
+18
+00:02:08,640 --> 00:02:15,640
+are the most expensive to fix later, which is why this stage matters so much. So the verification is going to check the system against its specification.
+
+19
+00:02:15,640 --> 00:02:20,640
+For validation is so the system conforms to its specification. One of the mistakes happening in specification is
+
+20
+00:02:20,640 --> 00:02:42,640
+So the verification is so the verification is the most expensive to fix later, which is why this stage matters so much. So the verification is going to check the system against its specification through review and inspection of requirement design and code.
+
+21
+00:02:42,640 --> 00:03:00,640
+The validation checks the system meets the customer needs, including acceptance testing with the customer. And the testing level is required. The testing in most of common techniques, but it can only show the defect
+
+22
+00:03:00,640 --> 00:03:28,640
+We're not that non-remain. We're gonna do show some examples of the technique of the process applied in QA automation in a project. So in the QA automation, they have four steps. First is write a test that tests you the framework such as
+
+23
+00:03:28,640 --> 00:03:37,640
+The test tests with the browser automation tool to simulate user integration.
+
+24
+00:03:37,640 --> 00:03:55,640
+Then we have run from the command line, the developer run the automate test in their local development environment. The third one is run on the CI CD, the same test in the project CD pipeline for every change.
+
+25
+00:03:55,640 --> 00:04:24,640
+And then for catch and then for catch the regression failure are caught before the code is deployed to user. Because of the development in programming, the change and the certification and requirement feature change every single time. So to be safe and not interfere with the other one, the QA automation testing requires running on the CI CD.
+
+26
+00:04:24,640 --> 00:04:46,640
+Every change based on the deployment. So where those four activities appear. So the specification appear when accepted user behavior become the test case. Development application code and test code are written together. The validation automated run
+
+27
+00:04:46,640 --> 00:04:58,640
+The validation tests run ready by the application we have are specified and the evolution the test we run for each change to protect the existing behavior.
+
+28
+00:04:58,640 --> 00:05:14,640
+Next we gonna do going through the software process module. So a process module is a simplified description of software process presented from one perspective.
+
+29
+00:05:14,640 --> 00:05:38,640
+So we have two main idea. One is plan driver driven. All process activities are planned in advance and progress is measured against that plan. Second is agile. Planning is incremental so it easier to change the process to reflect changing customer requirements.
+
+30
+00:05:38,640 --> 00:06:07,640
+So in the real world. So in the real world or the practice. Most of the process including elements of both. There are no right or wrong software processes. It's safe hands on the project based. So now we're going to go through some process. And we're going to compare those. First is waterfall. Incremental integration and configuration. Plan driven and agile. So for the basic idea. The waterfall is a
+
+31
+00:06:07,640 --> 00:06:37,480
+waterfall is a sequential linear phase requirement design. Implementation testing and maintenance. So it's working by step by step. Each stage is complete before the next begin. What is suitable for when running a waterfall? Deloge project. With fixed. Well understood. Requirements strict. Relation or
+
+32
+00:06:37,480 --> 00:07:07,480
+safety need. Like aerospace. Medical infrastructure. Medical or infrastructure. Next is the incremental process. The idea of it is they build a small piece and deliver functional component early. To practice it. You can try to repeating recycle and add features to a growing baseline version.
+
+33
+00:07:07,480 --> 00:07:26,480
+It will suit. It will suit with the project. It will suit with the project. Where evolving requirements and need. For early release. Or feedback. Like web app. Sats 2. Then the integration and configuration process.
+
+34
+00:07:26,480 --> 00:07:54,480
+The process. Is the assemble system from. From off the shelf. Software commercial package. Or open source component. Is evaluate. Select and adapt. And connect existing component. The projects. That normally. Suit to tight. Headline purchase. And standard business system. Like CRM and ERP.
+
+35
+00:07:54,480 --> 00:08:10,480
+Then the plan. Then the plan. The plan. The plan. The plan. The plan. The plan. Every development. Activity. In detail. Before. Implementation. Beging. Reprogress. You have to. Reschedule.
+
+36
+00:08:10,480 --> 00:08:17,480
+schedule milestone and formal documentation track against a master plan.
+
+37
+00:08:17,480 --> 00:08:28,480
+It will work for the long-term enterprise work, fixed-price contract, multi-team coordination and formal certification.
+
+38
+00:08:28,480 --> 00:08:39,480
+For the agile idea, it is iterative, human-centered delivery with customer collaboration and fast response to change.
+
+39
+00:08:39,480 --> 00:08:46,480
+The progress of it is a short-time box sprint that each produce a working increment.
+
+40
+00:08:46,480 --> 00:08:56,480
+It will suit for projects like a startup, innovation products and customer-facing web or mobile app.
+
+41
+00:08:56,480 --> 00:09:00,480
+Now we're going through some of the modules.
+
+42
+00:09:00,480 --> 00:09:02,480
+So you can see here we have five steps.
+
+43
+00:09:02,480 --> 00:09:05,480
+The first one is requirements analysis.
+
+44
+00:09:05,480 --> 00:09:15,480
+The work of it is to gather and document all functional and non-functional needs upfront.
+
+45
+00:09:15,480 --> 00:09:25,480
+The second step, system and software design, defining architecture, data module, and component structure.
+
+46
+00:09:25,480 --> 00:09:29,480
+The third step, implement and unit testing.
+
+47
+00:09:29,480 --> 00:09:37,480
+Coach each module and verify its basic functionality.
+
+48
+00:09:37,480 --> 00:09:40,480
+The fourth one is integration and system testing.
+
+49
+00:09:40,480 --> 00:09:47,480
+Combine all modules into a full system and test it as a large project.
+
+50
+00:09:47,480 --> 00:09:51,480
+Then finally is deployment and maintenance.
+
+51
+00:09:51,480 --> 00:09:53,480
+Delivery to production.
+
+52
+00:09:53,480 --> 00:09:54,480
+Fix remaining bugs.
+
+53
+00:09:54,480 --> 00:09:56,480
+Handle long-term product updates.
+
+54
+00:09:56,480 --> 00:10:02,480
+So why waterfall is a plan-driven type?
+
+55
+00:10:02,480 --> 00:10:15,480
+Is we create plan-first development follow the pre-schedule plan set before any code is written.
+
+56
+00:10:15,480 --> 00:10:17,480
+Track it strictly.
+
+57
+00:10:17,480 --> 00:10:23,480
+Every milestone deliverable and resource allocation is mapped out upfront.
+
+58
+00:10:23,480 --> 00:10:33,480
+So for detail, if you're going to the requirement analysis, the next step is system software.
+
+59
+00:10:33,480 --> 00:10:34,480
+You figure out there's something wrong.
+
+60
+00:10:34,480 --> 00:10:39,480
+You have to go back to the first one and then drop down to two.
+
+61
+00:10:39,480 --> 00:10:47,480
+So every single step to move to the next step, you have to be and you figure out there's something wrong.
+
+62
+00:10:47,480 --> 00:10:53,480
+You have to start again from the requirement analysis.
+
+63
+00:10:53,480 --> 00:11:04,480
+So next of waterfall, we have three main things that strictly with the waterfall process is documentation, phase gate, and late change.
+
+64
+00:11:04,480 --> 00:11:07,480
+So with the first one is documentation.
+
+65
+00:11:07,480 --> 00:11:10,480
+It's a primary communication medium.
+
+66
+00:11:10,480 --> 00:11:19,480
+The purpose of that, the document will be asked as the contract and reference across the sequential teams.
+
+67
+00:11:19,480 --> 00:11:28,480
+And the basis sign off for each phase hand, the next, a complete basis.
+
+68
+00:11:28,480 --> 00:11:30,480
+Then the basis sign off.
+
+69
+00:11:30,480 --> 00:11:36,480
+So for each phase, phase hand to the next as a complete and written deliverable.
+
+70
+00:11:36,480 --> 00:11:39,480
+The second one is a phase completed.
+
+71
+00:11:39,480 --> 00:11:42,480
+The second one is phase completion.
+
+72
+00:11:42,480 --> 00:11:46,480
+It has two main activities is review and sign off.
+
+73
+00:11:46,480 --> 00:11:57,480
+For each stage is fully review before next begin and the sub-defect cascading problems are caught at the gate and not passed downstream.
+
+74
+00:11:57,480 --> 00:12:00,480
+The critical of it is when the requirement changes late.
+
+75
+00:12:00,480 --> 00:12:02,480
+It's a high cost and delay.
+
+76
+00:12:02,480 --> 00:12:08,480
+The team must reevaluate earlier phase, re-architect components and rewrite code.
+
+77
+00:12:08,480 --> 00:12:11,480
+Also the scope of schedule disruption.
+
+78
+00:12:11,480 --> 00:12:14,480
+The earlier documentation is invalidated.
+
+79
+00:12:14,480 --> 00:12:21,480
+The deadline slip and total cost grow based on the delay of each phase.
+
+80
+00:12:21,480 --> 00:12:25,480
+So we have done the waterfall process.
+
+81
+00:12:25,480 --> 00:12:31,480
+Now we go into the other process.
+
+82
+00:12:31,480 --> 00:12:32,480
+Incremental development.
+
+83
+00:12:32,480 --> 00:12:38,480
+So here in incremental development, we have three parts.
+
+84
+00:12:38,480 --> 00:12:43,480
+The three parts is break the system into pieces with the purpose.
+
+85
+00:12:43,480 --> 00:12:48,480
+Its functionality is built through successive releases.
+
+86
+00:12:48,480 --> 00:12:56,480
+Each deliver a usable subnet and interleave the activity.
+
+87
+00:12:56,480 --> 00:13:04,480
+The team specify the next feature while developing current ones and validating the finished ones.
+
+88
+00:13:04,480 --> 00:13:06,480
+Customer feedback steer it.
+
+89
+00:13:06,480 --> 00:13:15,480
+The customer evaluates working software after each release, feedback shape, and prioritizes later increments.
+
+90
+00:13:15,480 --> 00:13:28,480
+So in the right diagram, you will see how the increments work.
+
+91
+00:13:28,480 --> 00:13:38,480
+So as the first release, you will have a basic functional software that's gonna be used for users.
+
+92
+00:13:38,480 --> 00:13:49,480
+And based on the feedback, you will grow and maintenance keep going on for the next release and next feature.
+
+93
+00:13:49,480 --> 00:13:58,480
+And growing up step by step and stack up for each increments release.
+
+94
+00:13:58,480 --> 00:14:02,480
+So why the increments lower the cost of change?
+
+95
+00:14:02,480 --> 00:14:06,480
+So the small increments keep change local.
+
+96
+00:14:06,480 --> 00:14:13,480
+The increment delivery also put the useful functionality in front of the customer earlier.
+
+97
+00:14:13,480 --> 00:14:19,480
+Which means you have the good feedback based on them.
+
+98
+00:14:19,480 --> 00:14:25,480
+And based on the local, you can easily fix and developing later on.
+
+99
+00:14:25,480 --> 00:14:33,480
+So it has three parts that's telling this about the lower cost.
+
+100
+00:14:33,480 --> 00:14:36,480
+So first is a small isolated piece.
+
+101
+00:14:36,480 --> 00:14:47,480
+The chain touches a small piece of code rather than an entire monolithic system.
+
+102
+00:14:47,480 --> 00:14:50,480
+Less documentation reward.
+
+103
+00:14:50,480 --> 00:15:03,480
+Little time is wasted revising extensive documents for work already done.
+
+104
+00:15:03,480 --> 00:15:05,480
+And no re-architecting of phase.
+
+105
+00:15:05,480 --> 00:15:11,480
+Complete work is extended instead of review in earlier phase.
+
+106
+00:15:11,480 --> 00:15:15,480
+So now we're gonna go in through the integration and configuration.
+
+107
+00:15:15,480 --> 00:15:26,480
+In the projects, build the system by re-using existing software, components, framework, service, or configurable system.
+
+108
+00:15:26,480 --> 00:15:44,480
+Instead of writing everything from crash is one of the important work to reduce that timeline and the process and cost for developing a project.
+
+109
+00:15:44,480 --> 00:15:45,480
+Or the software.
+
+110
+00:15:45,480 --> 00:15:54,480
+So to integrate and configuration, we have so many, we have five things to remember.
+
+111
+00:15:54,480 --> 00:16:05,480
+Requirement specification, discovery and evaluation, requirement refinement, configuration and adaption integration.
+
+112
+00:16:05,480 --> 00:16:14,480
+The advantage of this is faster delivery at lower cost and risk.
+
+113
+00:16:14,480 --> 00:16:17,480
+That means it's suitable and is well testing before.
+
+114
+00:16:17,480 --> 00:16:26,480
+The limitation of it is a requirement may need compromise and the team has less control over how we use component evolve.
+
+115
+00:16:26,480 --> 00:16:35,480
+Now for part 6 is the evolution of engineering continue after delivery the projects.
+
+116
+00:16:35,480 --> 00:16:41,480
+We all know that 60% of total software costs go to the maintenance.
+
+117
+00:16:41,480 --> 00:16:51,480
+And there is three kinds of evolution in one project after delivery.
+
+118
+00:16:51,480 --> 00:16:56,480
+First is the corrective fixing fault file after delivery.
+
+119
+00:16:56,480 --> 00:17:02,480
+Adaptive adjusting to change the environment such as a new operating system or hardware.
+
+120
+00:17:02,480 --> 00:17:11,480
+Perfective adding or improving function and performance of the process of the project.
+
+121
+00:17:11,480 --> 00:17:15,480
+So for the part 7 we have a copying with change.
+
+122
+00:17:15,480 --> 00:17:20,480
+So copying with change is a software process.
+
+123
+00:17:20,480 --> 00:17:30,480
+That's when you have to switch in from a, for example, from the waterfall to agile process.
+
+124
+00:17:30,480 --> 00:17:35,480
+Three part here is change is inevitable.
+
+125
+00:17:35,480 --> 00:17:39,480
+It's applied in all large software projects.
+
+126
+00:17:39,480 --> 00:17:48,480
+Like when it's happened when the business change that leads to new and change requirements.
+
+127
+00:17:48,480 --> 00:17:53,480
+A new technology applied open up for better way to implement the system.
+
+128
+00:17:53,480 --> 00:17:58,480
+The changing in platform requires application change.
+
+129
+00:17:58,480 --> 00:18:06,480
+So the change will be cost of reward plus the cost of new functionality.
+
+130
+00:18:06,480 --> 00:18:12,480
+Then we have a prototyping, port chain anticipation.
+
+131
+00:18:12,480 --> 00:18:21,480
+A version of a system or part of it is built quickly to check the requirement and design feasibility.
+
+132
+00:18:21,480 --> 00:18:29,480
+The requirement, elixation and validation design, explore options and develop UI.
+
+133
+00:18:29,480 --> 00:18:32,480
+A testing run back to back test.
+
+134
+00:18:32,480 --> 00:18:35,480
+Then the incremental delivery.
+
+135
+00:18:35,480 --> 00:18:41,480
+Support change avoidance and tolerance increment.
+
+136
+00:18:41,480 --> 00:18:47,480
+Go to customer and command and experimentation.
+
+137
+00:18:47,480 --> 00:18:52,480
+Customer receives useful functionality earlier.
+
+138
+00:18:52,480 --> 00:18:56,480
+Feedback from each increment inform what is built next.
+
+139
+00:18:56,480 --> 00:19:00,480
+So how to change effect the projects.
+
+140
+00:19:00,480 --> 00:19:04,480
+First thing of all will be cost.
+
+141
+00:19:04,480 --> 00:19:11,480
+Because reward such as reanalyze requirement plus the cost of implement the new functionality.
+
+142
+00:19:11,480 --> 00:19:13,480
+Then the schedule reward.
+
+143
+00:19:13,480 --> 00:19:19,480
+It can push back delivery date and can disturb the milestone.
+
+144
+00:19:19,480 --> 00:19:25,480
+The testing with the change of code must be retested.
+
+145
+00:19:25,480 --> 00:19:31,480
+And with that the regression check to catch the documentation of the project.
+
+146
+00:19:31,480 --> 00:19:46,480
+All of the requirements design user documents must be updated to stay consistent with the system after change.
+
+147
+00:19:46,480 --> 00:19:52,480
+So now we're gonna going through two real world systems.
+
+148
+00:19:52,480 --> 00:19:56,480
+First, we're gonna using a streaming platform.
+
+149
+00:19:56,480 --> 00:19:58,480
+Nextflix is example.
+
+150
+00:19:58,480 --> 00:20:11,480
+So the Nextflix streaming service is a cloud-based multimedia platform that delivers continuous high definition video on demand to thousands of devices type without interruption.
+
+151
+00:20:11,480 --> 00:20:15,480
+Then we will have the gaming system.
+
+152
+00:20:15,480 --> 00:20:16,480
+Then we will have the gaming system.
+
+153
+00:20:16,480 --> 00:20:20,480
+We're gonna use Riot Games and League of Legends as a sample.
+
+154
+00:20:20,480 --> 00:20:34,480
+It's a real-time low latency client server platform that synchronize player input, physics and rendering across multiplayer match worldwide.
+
+155
+00:20:34,480 --> 00:20:46,480
+So now we're gonna go in through core function between a video streaming and game system.
+
+156
+00:20:46,480 --> 00:20:57,480
+For the video streaming, we have transcoding and encoding that convert a raw video into many formats.
+
+157
+00:20:57,480 --> 00:21:03,480
+Find the content and buy rate for different screens and speeds.
+
+158
+00:21:03,480 --> 00:21:09,480
+Content delivery network.
+
+159
+00:21:09,480 --> 00:21:15,480
+Catch popular video on each server near user to cut the delay and buffering.
+
+160
+00:21:15,480 --> 00:21:23,480
+Then recommendation engine, analyze the real-world behavior, personalized content suggestions.
+
+161
+00:21:23,480 --> 00:21:31,480
+Adaptive bit-streaming adjusts the resolution midstream to match the bandwidth and prevent buffering.
+
+162
+00:21:31,480 --> 00:21:36,480
+That's the main core of the video streaming platform.
+
+163
+00:21:36,480 --> 00:21:41,480
+So now we are going through the gaming platform.
+
+164
+00:21:41,480 --> 00:21:45,480
+For the League of Legends game, we have four things.
+
+165
+00:21:45,480 --> 00:21:54,480
+It's the game client handling 3D rendering, animation input, and local sound on the player device.
+
+166
+00:21:54,480 --> 00:21:58,480
+A dedicated game server, single source of truth.
+
+167
+00:21:58,480 --> 00:22:04,480
+For matched state, run game logic to prevent cheating.
+
+168
+00:22:04,480 --> 00:22:11,480
+Load latency networking, optimized UDP protocol process player action in millisecond.
+
+169
+00:22:11,480 --> 00:22:14,480
+And matchmaking and lobby.
+
+170
+00:22:14,480 --> 00:22:21,480
+So we have a group of players of similar skills to balance lobby before the match starts.
+
+171
+00:22:21,480 --> 00:22:31,480
+So we have talked about the main, the core functionality between two different platforms of video streaming and game system.
+
+172
+00:22:31,480 --> 00:22:37,480
+Now we're going to go into the process detail for each system.
+
+173
+00:22:37,480 --> 00:22:47,480
+So we will have six things to compare between two different systems.
+
+174
+00:22:47,480 --> 00:22:56,480
+First is the development approach, requirements, waterfall trace, HLSG, major advantage and major challenge.
+
+175
+00:22:56,480 --> 00:23:08,480
+So for the gaming, the development approach is required the micro service based on DevOps, CICD and HL increment development on AWS.
+
+176
+00:23:08,480 --> 00:23:17,480
+However, for the game system is a hybrid HL with the schedule patch release increments.
+
+177
+00:23:17,480 --> 00:23:19,480
+And the different requirements is also different.
+
+178
+00:23:19,480 --> 00:23:29,480
+The data driving user story from telemetry, A to B test, AB test, metric and feature flag.
+
+179
+00:23:29,480 --> 00:23:38,480
+But for the gaming is required in the balanced data analysis, community feedback, backlog and design document.
+
+180
+00:23:38,480 --> 00:23:45,480
+So if we apply waterfall and video streaming, it will result low.
+
+181
+00:23:45,480 --> 00:23:57,480
+Because the upfront, because of upfront planning and mainly for cloud foundation and compliance baseline.
+
+182
+00:23:57,480 --> 00:24:07,480
+But it's moderate for, however, in gaming is moderate for R pipeline, core engine milestone and tournament build freeze.
+
+183
+00:24:07,480 --> 00:24:11,480
+In Asia is high applied for both.
+
+184
+00:24:11,480 --> 00:24:17,480
+For streaming is continuous integration, short feedback loop and rapid development.
+
+185
+00:24:17,480 --> 00:24:23,480
+And for the game is a gameplay balancing season update and rapid life hotfix.
+
+186
+00:24:23,480 --> 00:24:39,480
+So the advantage of game streaming when applied process is high availability, false isolation and global rollout without interruption.
+
+187
+00:24:39,480 --> 00:24:43,480
+And for the game is predictable update.
+
+188
+00:24:43,480 --> 00:24:57,480
+And for the game is predictable update cadence with flexibility to re-balance as the meta shifts for the major challenge.
+
+189
+00:24:57,480 --> 00:24:59,480
+Complex.
+
+190
+00:24:59,480 --> 00:25:07,480
+Complex. It's created complex service, orchestration, latency and distribution consistent for Netflix.
+
+191
+00:25:07,480 --> 00:25:13,480
+But for the League of Legends, it's created freedom versus engine stability.
+
+192
+00:25:13,480 --> 00:25:15,480
+Stability.
+
+193
+00:25:15,480 --> 00:25:16,480
+Stability.
+
+194
+00:25:16,480 --> 00:25:17,480
+Stability.
+
+195
+00:25:17,480 --> 00:25:18,480
+And progression.
+
+196
+00:25:18,480 --> 00:25:19,480
+Legacy code.
+
+197
+00:25:19,480 --> 00:25:20,480
+Depth.
+
+198
+00:25:20,480 --> 00:25:21,480
+If we apply the waterfall.
+
+199
+00:25:21,480 --> 00:25:29,480
+In both kinds of different platforms like video streaming and game system.
+
+200
+00:25:29,480 --> 00:25:30,480
+The advantage of it.
+
+201
+00:25:30,480 --> 00:25:36,480
+The advantage of it comes out is the clear structure and documentation.
+
+202
+00:25:36,480 --> 00:25:38,480
+Predictable planning and ease management.
+
+203
+00:25:38,480 --> 00:25:43,480
+However, it's inflexible to change and late validation.
+
+204
+00:25:43,480 --> 00:25:46,480
+High upfront risk for both deployment.
+
+205
+00:25:46,480 --> 00:25:51,480
+We have talked about the core of two different kinds of streaming platforms.
+
+206
+00:25:51,480 --> 00:25:56,480
+And now we talk about the...
+
+207
+00:25:56,480 --> 00:26:02,480
+We already talked about if we apply the waterfall or increment, what is the benefit and not.
+
+208
+00:26:02,480 --> 00:26:08,480
+So now we talk more why the successful company differs.
+
+209
+00:26:08,480 --> 00:26:12,480
+So for the Netflix and got right game.
+
+210
+00:26:12,480 --> 00:26:14,480
+So we have type software.
+
+211
+00:26:14,480 --> 00:26:20,480
+A heavy heavy local client plus load latency multiplayer.
+
+212
+00:26:20,480 --> 00:26:26,480
+And core engine change needs high client server synchronization.
+
+213
+00:26:26,480 --> 00:26:32,480
+The team signs the large cross functional team of engineer artists and sound designer.
+
+214
+00:26:32,480 --> 00:26:37,480
+QA and balance design align for on each patch.
+
+215
+00:26:37,480 --> 00:26:40,480
+Safety and security.
+
+216
+00:26:40,480 --> 00:26:43,480
+A comparative integrity.
+
+217
+00:26:43,480 --> 00:26:46,480
+Anti-cheat and server-side validation.
+
+218
+00:26:46,480 --> 00:26:50,480
+Since the sync bugs can be enabled exploit.
+
+219
+00:26:50,480 --> 00:26:54,480
+For the frequency of change.
+
+220
+00:26:54,480 --> 00:26:57,480
+The rapid change.
+
+221
+00:26:57,480 --> 00:27:03,480
+But channel into predictable bi-quickly patch.
+
+222
+00:27:03,480 --> 00:27:09,480
+So players when playing league can adapt.
+
+223
+00:27:09,480 --> 00:27:12,480
+For the customer expectation.
+
+224
+00:27:12,480 --> 00:27:17,480
+It requires a predictable patch.
+
+225
+00:27:17,480 --> 00:27:25,480
+Captain can polish contained and detailed patch notes and notice of manners for all players.
+
+226
+00:27:25,480 --> 00:27:28,480
+The cost and risk.
+
+227
+00:27:28,480 --> 00:27:30,480
+The game streaming require...
+
+228
+00:27:30,480 --> 00:27:37,480
+In Riot, they require a PPE client for testing before release.
+
+229
+00:27:37,480 --> 00:27:39,480
+So they can get the feedback.
+
+230
+00:27:39,480 --> 00:27:46,480
+And testing all new features change at the same time.
+
+231
+00:27:46,480 --> 00:27:53,480
+And the release frequency is the global patch every week.
+
+232
+00:27:53,480 --> 00:27:56,480
+And plus instant hotfix for urgent bugs.
+
+233
+00:27:56,480 --> 00:27:57,480
+So as a conclusion.
+
+234
+00:27:57,480 --> 00:28:02,480
+There's no process with every project.
+
+235
+00:28:02,480 --> 00:28:04,480
+And a process is safe.
+
+236
+00:28:04,480 --> 00:28:11,480
+When it matches with the system architecture, user expectations and organizational goals.
+
+237
+00:28:11,480 --> 00:28:21,480
+With the Netflix is a cloud native microservice drive on continuous micro-development.
+
+238
+00:28:21,480 --> 00:28:31,480
+But for the Riot game is a competitive game drive on structure and increment release.
+
+239
+00:28:31,480 --> 00:28:36,480
+But in your project, you have to choose based on your way.
+
+240
+00:28:36,480 --> 00:28:45,480
+Software type, team size, safety, change, customers, regulation, cost and release frequencies.
+
+241
+00:28:45,480 --> 00:28:50,480
+And you can choose based on those.
+
+242
+00:28:50,480 --> 00:28:56,480
+And try and fail on the process you choose.
+
+243
+00:28:56,480 --> 00:29:02,480
+So now is the reference that I used for this research.
+
+244
+00:29:02,480 --> 00:29:04,480
+Thank you for listening.
+
