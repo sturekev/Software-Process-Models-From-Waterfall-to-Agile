@@ -83,8 +83,8 @@ This README summarizes the presentation transcript in [`swe_2_mp3.srt`](./swe_2_
 
 ## Links
 
-- YouTube: URL to be added
-- LinkedIn: URL to be added
+- YouTube: [URL](https://youtu.be/wssgkIYboUI)
+- LinkedIn: [URL](https://www.linkedin.com/posts/phat-tu-stk_softwareengineering-softwaredevelopment-softwareprocess-activity-7517995162246107136-6Ul1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk9u7IBJ-s3Dgxdr--OdTzuKoSbp4RtZgI)
 
 ## References
 
